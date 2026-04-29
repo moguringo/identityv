@@ -1,5 +1,11 @@
+/* タイトル */
+h1, h2 {
+  font-family: 'Cinzel', serif;
+}
+
+
 body {
-  font-family: "Avenir Next";
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
    min-height: 100vh;
    display: flex;           /* ← これが必須 */
@@ -10,10 +16,10 @@ body {
   flex: 1;
 }
 .header{
-    background-color: rgb(28, 205, 202);
+    background-color: black;
     color: aliceblue;
     display:flex;
-    padding: 0 20px;
+    padding: 0 40px;
     align-items: center;
     gap: 40px;
     
@@ -41,37 +47,44 @@ body {
     margin: 0;
 }
 
-.yohaku{
-  min-height: 100vh;
+.hero {
+  height: 420px;
+  background-image:
+    linear-gradient(90deg, rgba(0,0,0,0.75), rgba(0,0,0,0.2)),
+    url("./hero.jpg");
+  background-size: cover;
+  background-position: center;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
-  
+.hero-content {
+  margin-left: 8%;
+  color: #fff;
 }
 
-.cards {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+.hero-content h1 {
+  font-size: 48px;
+  letter-spacing: 0.08em;
+  margin-bottom: 20px;
 }
 
-.card {
-  width: calc(33% - 20px);
-  background: #1e1e1e;
-  color: white;
-  padding: 40px;
-  border-radius: 12px;
-  text-align: center;
-  transition: 0.2s;
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 28px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.hero-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 1px solid #aaa;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(0,0,0,0.35);
+  border-radius: 4px;
+}
+
+.hero-btn:hover {
+  background: rgba(255,255,255,0.15);
 }
