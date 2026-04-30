@@ -14,6 +14,7 @@ body {
 
 .main{
   flex: 1;
+  background-color: black;
 }
 .header{
     background-color: black;
@@ -36,13 +37,9 @@ body {
     margin-left: auto;
 }
 
-a {
+.headerdata a {
   text-decoration: none;
   color: inherit;
-}
-
-a:hover {
-  opacity: 0.7;
 }
 
 .footer{
@@ -80,8 +77,8 @@ a:hover {
 
 .hero-content p {
   font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 28px;
+  line-height: 1.1;
+  margin-bottom: 18px;
 }
 
 .hero-btn {
@@ -96,4 +93,160 @@ a:hover {
 
 .hero-btn:hover {
   background: rgba(255,255,255,0.15);
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 32px;
+}
+
+.panel {
+  background: rgba(10, 16, 28, 0.8);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 24px;
+  color: #fff;
+}
+
+.panel h2 {
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ランキング */
+.ranking-tabs {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  padding-bottom: 12px;
+}
+
+.ranking-tabs span {
+  color: #bbb;
+  font-weight: bold;
+}
+
+.ranking-tabs .active {
+  color: #ff5a4f;
+}
+
+.ranking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.rank-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tier {
+  font-size: 48px;
+  font-weight: bold;
+  width: 40px;
+  text-align: center;
+}
+
+.tier.s {
+  color: #d9a441;
+}
+
+.tier.a {
+  color: #8f7cff;
+}
+
+.rank-text h3 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.rank-text p {
+  margin: 0;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+/* 更新情報 */
+.update-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.update-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  line-height: 1.7;
+}
+
+/* ボタン */
+.panel-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.05);
+}
+
+.panel-btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* おすすめコンテンツ */
+.recommend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.recommend-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.03);
+}
+
+.recommend-item:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.recommend-item img {
+  width: 110px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.recommend-text h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.recommend-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d0d0;
+}
+
+@media (max-width: 900px) {
+  .top-cards {
+    grid-template-columns: 1fr;
+  }
 }
