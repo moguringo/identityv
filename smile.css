@@ -22,11 +22,17 @@ body {
     display:flex;
     padding: 0 40px;
     align-items: center;
-    gap: 40px;
+    gap: 20px;
     
-    
+}
+
+.header img{
+   width: 72px;
+  height: 72px;
+  object-fit: cover;
 
 }
+
 .title{
     display: flex;
 }
@@ -145,6 +151,12 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.rank-item img{
+   width: 72px;
+  height: 72px;
+  object-fit: cover;
 }
 
 .tier {
